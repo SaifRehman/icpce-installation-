@@ -94,3 +94,8 @@ $ cd /opt/ibm-cloud-private-3.2.0
 $    sudo docker run -e LICENSE=accept \
    -v "$(pwd)":/data ibmcom/icp-inception:3.2.0 cp -r cluster /data
 ```
+- Add the IP address of each node in the cluster to the /<installation_directory>/cluster/hosts file
+
+wget https://ak-dsw-mul.dhe.ibm.com/sdfdl/v2/fulfill/CC1W1EN/Xa.2/Xb.htcOMovxHCAgZGS1maQdxPEqyz_ap_DF/Xc.CC1W1EN/ibm-cloud-private-x86_64-3.2.0.tar.gz/Xd./Xf.lPr.A6VR/Xg.10386025/Xi./XY.knac/XZ.Wl5YIOIeZrTyS9-JE51zOJopGo4/ibm-cloud-private-x86_64-3.2.0.tar.gz#anchor
+
+wget https://ak-dsw-mul.dhe.ibm.com/sdfdl/v2/fulfill/CC1W6EN/Xa.2/Xb.htcOMovxHCAgZGS1maQdxPEqyz9Fmrjn/Xc.CC1W6EN/icp-docker-18.06.2_x86_64.bin/Xd./Xf.lPr.A6VR/Xg.10386025/Xi./XY.knac/XZ.dm3RP1RFPUCHUrkwaL6_efz4r7w/icp-docker-18.06.2_x86_64.bin#anchor
