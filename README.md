@@ -27,6 +27,8 @@ $ yum install docker-ce -y
 $ sudo systemctl start docker
 $ sudo systemctl status docker
 ```
+- check https://www.ibm.com/support/knowledgecenter/SSBS6K_3.2.0/installing/docker_dir.html
+
 ## Prepare each node for installation
 
 - check ports are open
@@ -76,3 +78,19 @@ Add the following line to your `/etc/fstab` file adjusting the UUID to your devi
 `UUID=811d3de0-ca6b-4b61-9445-af2e306d9999	/mnt/mydrive	ext4	defaults 0 0`
 
 `mount -a` - remounts filesystems from `/etc/fstab`
+
+## Installing ICP-CE
+- pull image
+```
+$ docker pull ibmcom/icp-inception:3.2.0
+```
+- Make directory
+```
+$ sudo mkdir /opt/ibm-cloud-private-3.2.0
+$ cd /opt/ibm-cloud-private-3.2.0
+```
+- Extract info
+```
+$    sudo docker run -e LICENSE=accept \
+   -v "$(pwd)":/data ibmcom/icp-inception:3.2.0 cp -r cluster /data
+```
