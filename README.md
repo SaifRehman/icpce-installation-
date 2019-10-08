@@ -114,6 +114,7 @@ docker tag ibmcom/transformation-advisor-server:1.9.9 mycluster.icp:8500/transfo
 docker push mycluster.icp:8500/transformation-advisor-server:1.9.9
 ```
 
+## Create secret
 
 ```
 kubectl -n default create secret generic transformation-advisor-secret --from-literal=db_username='YWRtaW4=' --from-literal=secret='YWRtaW4='
